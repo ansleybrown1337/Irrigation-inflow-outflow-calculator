@@ -11,7 +11,7 @@ library(dplyr)
 library(ggplot2)
 
 # upload data: use template provided in Data folder
-water.data = read.csv(file.choose())
+water.data = read.csv(file.choose(), fileEncoding="UTF-8-BOM")
 head(water.data)
 
 # Data column labels are as follows:
@@ -98,7 +98,16 @@ water.data %<>%
 # View the dataframe for QA/QC
 View(water.data)
 
-#Save to csv as desired
-write.csv(water.data, file.choose())
+# Save to csv as desired
+write.csv(water.data, file.choose(), row.names = F)
 
+# Further insights
+# Summarize average infiltration amounts by event and treatment
+# use the below template to aggregate whatever you'd like:
+inflitration_summary = aggregate(infiltration.in~irrigation+plot, 
+                                 data=water.data, FUN=mean)
+inflitration_summary
+
+#write the summary to a csv if you want:
+write.csv(inflitration_summary, file.choose(), row.names = F)
 
