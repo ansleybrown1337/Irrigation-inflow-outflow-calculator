@@ -1,0 +1,26 @@
+{output file column name} ---- {Measurement name}
+
+ï..plot ---- Plot treatment; CT = conventional tillage, ST = strip tillage, MT = minimum tillage
+rep ---- Replication
+irrigation ---- Irrigation event number
+date ---- Date
+reading_1 ---- 1st Manual Inflow Reading   (sec.)
+reading_2 ---- 2nd Manual Inflow Reading  (sec.)
+irr_time ---- Irrigation Time (hrs)
+outflow_gal ---- Total runoff outflow (gallons)
+notes ---- notes column
+inf.avg.sec ---- Average bucket fill time (sec.)
+inf.avg.gpm ---- Average inflow rate (gal. per min. or gpm)
+inf.gal.trt ---- Total applied water in that set (gallons)
+inf.acreft.trt ---- Total applied water in that set (acre/feet)
+inf.acrein.trt ---- Total applied water in that set (acre/in.)
+inf.in.trt ---- Total applied water in that set (inches)
+inf.mm.trt ---- Total applied water in that set (millimeters)
+out.acreft.trt ---- Total runoff outflow in that set (acre/feet)
+out.acrein.trt ---- Total runoff outflow in that set (acre/in.)
+out.in.trt ---- Total runoff outflow in that set (inches)
+out.mm.trt ---- Total runoff outflow in that set (millimeters)
+infiltration.in ---- Total water infiltrated (inches)
+infiltration.mm ---- Total water infiltrated (millimeters)
+infiltration.rate.mmhr ---- Infiltration rate during that set (mm/hr.)
+bad_eff ---- Irrigation application efficiency assuming deep percolation = 0mm <- USUALLY A BAD ASSUMPTION
