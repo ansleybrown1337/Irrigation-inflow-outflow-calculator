@@ -104,7 +104,7 @@ write.csv(water.data, file.choose(), row.names = F)
 # Further insights
 # Summarize average infiltration amounts by event and treatment
 # use the below template to aggregate whatever you'd like:
-inflitration_summary = aggregate(infiltration.in~irrigation+plot, 
+inflitration_summary = aggregate(inf.in.trt~irrigation+plot, 
                                  data=water.data, FUN=mean)
 inflitration_summary
 
