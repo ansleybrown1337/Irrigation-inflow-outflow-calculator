@@ -49,7 +49,7 @@ inflow.func = function(df){
   df$inf.acrein.trt = df$inf.acreft.trt*12
   # convert to inches applied
   df$inf.in.trt = df$inf.acrein/acreage.row
-  # convert to milimeters applied
+  # convert to millimeters applied
   df$inf.mm.trt = df$inf.in.trt/25.4
   return(df)
 }
@@ -57,7 +57,7 @@ inflow.func = function(df){
 # function to perform outflow calcs
 outflow.func = function(df) {
   # Outflow quantities
-  # convert outflow gallons to acre/feete
+  # convert outflow gallons to acre/feet
   df$out.acreft.trt = df$outflow_gal*.0000036889
   # convert acre/feet to acre/inches
   df$out.acrein.trt = df$out.acreft.trt*12
