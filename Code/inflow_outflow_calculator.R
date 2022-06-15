@@ -58,14 +58,14 @@ inflow.func = function(df){
 outflow.func = function(df) {
   # Outflow quantities
   # convert outflow gallons to acre/feet
-  df$out.acreft.trt = df$outflow_gal*.0000036889
+  df$out.acreft.trt = df$outflow_gal*.00000306889
   # convert acre/feet to acre/inches
   df$out.acrein.trt = df$out.acreft.trt*12
   # convert to inches applied
   df$out.in.trt = df$out.acrein/acreage.row
   # convert to milimeters applied
   df$out.mm.trt = df$out.in.trt/25.4
-  
+
   # Outflow times - only returns if runoff time is present in input csv file
   if('runoff_time' %in% colnames(df)) {
     # convert runoff time to hours
@@ -104,10 +104,9 @@ write.csv(water.data, file.choose(), row.names = F)
 # Further insights
 # Summarize average infiltration amounts by event and treatment
 # use the below template to aggregate whatever you'd like:
-inflitration_summary = aggregate(inf.in.trt~irrigation+plot, 
+inflitration_summary = aggregate(inf.in.trt~irrigation+plot,
                                  data=water.data, FUN=mean)
 inflitration_summary
 
 #write the summary to a csv if you want:
 write.csv(inflitration_summary, file.choose(), row.names = F)
-
