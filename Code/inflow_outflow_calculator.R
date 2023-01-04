@@ -53,7 +53,6 @@ inflow.func = function(df){
   df$inf.mm.trt = df$inf.in.trt/25.4
   return(df)
 }
-
 # function to perform outflow calcs
 outflow.func = function(df) {
   # Outflow quantities
