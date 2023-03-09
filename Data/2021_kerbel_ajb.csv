@@ -1,4 +1,4 @@
-plot,rep,irrigation,date,reading_1,reading_2,irr_time,outflow_gal,runoff_time,notes
+plot,rep,irrigation,date,reading_1_sec,reading_2_sec,irr_time_hr,outflow_gal,runoff_time,notes
 CT,1,1,6/23/2021,8.025,7.495,12.5,1772.49,,assuming 12.5 hr set times for all irrigation events
 CT,2,1,6/24/2021,7.94,8.93,12.5,3215.261952,,
 MT,1,1,6/23/2021,6.495,7.615,12.5,6752.948295,,
